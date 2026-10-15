@@ -1,10 +1,12 @@
 import pytest
-from calculatrice import addition, soustraction, multiplication, division
+from calculatrice import addition, soustraction, multiplication, division, puissance
 
 
 def test_addition():
     assert addition(2, 3) == 5
 
+def test_puissance():
+    assert puissance(2, 3) == 8
 
 def test_soustraction():
     assert soustraction(10, 4) == 6
